@@ -1,3 +1,5 @@
+package br.com.rafacfrank.screenmatch.Filme;
+
 public class Filme {
     private String nome;
     private int anoDeLancamento;
@@ -7,7 +9,7 @@ public class Filme {
     private int totalDeAvaliacoes;
 
 
-    void exibeFichaTecnica() {
+    public void exibeFichaTecnica() {
 
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);

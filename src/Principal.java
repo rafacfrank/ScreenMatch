@@ -1,3 +1,5 @@
+import br.com.rafacfrank.screenmatch.Filme.Filme;
+
 public class Principal{
     public static void main(String[] args) {
         Filme favorito = new Filme();
