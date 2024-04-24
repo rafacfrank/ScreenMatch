@@ -1,6 +1,6 @@
-package br.com.rafacfrank.screenmatch.Filme;
+package br.com.rafacfrank.screenmatch.modelos;
 
-public class Filme {
+public class Titulo {
     private String nome;
     private int anoDeLancamento;
     private int duracaoEmMinutos;
@@ -62,6 +62,5 @@ public class Filme {
     public int getTotalDeAvaliacoes() {
         return totalDeAvaliacoes;
     }
-
 
 }
