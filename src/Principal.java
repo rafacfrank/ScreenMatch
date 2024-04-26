@@ -1,4 +1,6 @@
 import br.com.rafacfrank.screenmatch.calculos.CalculadoraDeTempo;
+import br.com.rafacfrank.screenmatch.calculos.FiltroRecomendacao;
+import br.com.rafacfrank.screenmatch.modelos.Episodio;
 import br.com.rafacfrank.screenmatch.modelos.Filme;
 import br.com.rafacfrank.screenmatch.modelos.Serie;
 
@@ -35,5 +37,15 @@ public class Principal{
         favorito.exibeFichaTecnica();
 
         System.out.println("Tempo total: " +calculadora.getTempoTotal());
+
+        Episodio primeiro = new Episodio();
+        primeiro.setNumero(1);
+        primeiro.setSerie(serie);
+        primeiro.setTotalVisualizacoes(300);
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtrar(favorito);
+        filtro.filtrar(outro);
+        filtro.filtrar(primeiro);
     }
 }
