@@ -4,6 +4,8 @@ import br.com.rafacfrank.screenmatch.modelos.Episodio;
 import br.com.rafacfrank.screenmatch.modelos.Filme;
 import br.com.rafacfrank.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal{
     public static void main(String[] args) {
         Filme favorito = new Filme();
@@ -47,5 +49,13 @@ public class Principal{
         filtro.filtrar(favorito);
         filtro.filtrar(outro);
         filtro.filtrar(primeiro);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(favorito);
+        listaDeFilmes.add(outro);
+
+        System.out.println("Tamanho da lista: " +listaDeFilmes.size());
+        System.out.println("Primeiro Filme: " +listaDeFilmes.get(0));
+        System.out.println(listaDeFilmes);
     }
 }
