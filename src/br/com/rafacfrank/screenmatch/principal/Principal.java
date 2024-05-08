@@ -1,3 +1,5 @@
+package br.com.rafacfrank.screenmatch.principal;
+
 import br.com.rafacfrank.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.rafacfrank.screenmatch.calculos.FiltroRecomendacao;
 import br.com.rafacfrank.screenmatch.modelos.Episodio;
@@ -8,21 +10,19 @@ import java.util.ArrayList;
 
 public class Principal{
     public static void main(String[] args) {
-        Filme favorito = new Filme();
-        favorito.setNome("The Matrix");
-        favorito.setAnoDeLancamento(1999);
+        Filme favorito = new Filme("The Matrix" , 1999);
+
         favorito.setDuracaoEmMinutos(135);
         favorito.setIncluidoNoPlano(true);
 
-        Filme outro = new Filme();
-        outro.setNome("John Wick");
-        outro.setAnoDeLancamento(2014);
+        Filme outro = new Filme("Jonh Wick" , 2014);
+
         outro.setDuracaoEmMinutos(101);
         outro.setIncluidoNoPlano(true);
 
-        Serie serie = new Serie();
-        serie.setNome("La Casa de Papel");
-        serie.setAnoDeLancamento(2017);
+        Serie serie = new Serie("La Casa de Papel", 2017);
+
+
         serie.setIncluidoNoPlano(true);
         serie.setAtiva(true);
         serie.setTemporadas(5);

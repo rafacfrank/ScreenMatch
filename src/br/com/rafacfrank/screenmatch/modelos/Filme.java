@@ -5,6 +5,10 @@ import br.com.rafacfrank.screenmatch.calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
+    public Filme(String titulo, int ano) {
+        super(titulo, ano);
+    }
+
     public String getDiretor() {
         return this.diretor;
     }
